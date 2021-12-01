@@ -45,7 +45,7 @@ fn part2(pass_pols: &Vec<PassPolicy>) -> usize {
 }
 
 pub fn run() {
-    println!("\nDay 2");
+    println!("\n2020 Day 2");
     let input = in_lines("input_files/2020/d2.txt");
     let start = Instant::now();
     let passes: Vec<PassPolicy> = input.iter().map(|l| PassPolicy::from_str(l)).collect();
