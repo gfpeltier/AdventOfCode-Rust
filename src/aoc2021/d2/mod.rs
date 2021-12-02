@@ -13,11 +13,11 @@ fn part1(instr_strs: &Vec<String>) -> i32 {
             _ => { panic!(); }
         }
     }
-	depth * dist
+    depth * dist
 }
 
 fn part2(instr_strs: &Vec<String>) -> i32 {
-	let mut depth: i32 = 0;
+    let mut depth: i32 = 0;
     let mut dist: i32 = 0;
     let mut aim: i32 = 0;
     for instr_str in instr_strs {
@@ -33,17 +33,17 @@ fn part2(instr_strs: &Vec<String>) -> i32 {
             _ => { panic!(); }
         }
     }
-	depth * dist
+    depth * dist
 }
 
 pub fn run() {
-	println!("\n2021 Day 2");
-	let input = in_lines("input_files/2021/d2.txt");
-	let start = Instant::now();
-	let a1 = part1(&input);
-	let a2 = part2(&input);
-	let duration = start.elapsed();
-	println!("Part 1: {}", a1);
-	println!("Part 2: {}", a2);
-	println!("Calc time: {:?}", duration);
+    println!("\n2021 Day 2");
+    let input = in_lines("input_files/2021/d2.txt");
+    let start = Instant::now();
+    let a1 = part1(&input);
+    let a2 = part2(&input);
+    let duration = start.elapsed();
+    println!("Part 1: {}", a1);
+    println!("Part 2: {}", a2);
+    println!("Calc time: {:?}", duration);
 }
