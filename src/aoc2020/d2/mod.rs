@@ -54,5 +54,5 @@ pub fn run() {
     let duration = start.elapsed();
     println!("Part 1: {}", a1);
     println!("Part 2: {}", a2);
-    println!("Day 2 Calc time: {:?}", duration);
+    println!("Calc time: {:?}", duration);
 }

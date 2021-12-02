@@ -10,7 +10,7 @@ fn part1(instr_strs: &Vec<String>) -> i32 {
             "forward" => { dist += parts[1].parse::<i32>().expect("Invalid number"); }
             "up" => { depth -= parts[1].parse::<i32>().expect("Invalid number"); }
             "down" => { depth += parts[1].parse::<i32>().expect("Invalid number"); }
-            _ => {panic!();}
+            _ => { panic!(); }
         }
     }
 	depth * dist
@@ -30,14 +30,14 @@ fn part2(instr_strs: &Vec<String>) -> i32 {
             }
             "up" => { aim -= parts[1].parse::<i32>().expect("Invalid number"); }
             "down" => { aim += parts[1].parse::<i32>().expect("Invalid number"); }
-            _ => {panic!();}
+            _ => { panic!(); }
         }
     }
 	depth * dist
 }
 
 pub fn run() {
-	println!("\n 2021 Day 2");
+	println!("\n2021 Day 2");
 	let input = in_lines("input_files/2021/d2.txt");
 	let start = Instant::now();
 	let a1 = part1(&input);
@@ -45,5 +45,5 @@ pub fn run() {
 	let duration = start.elapsed();
 	println!("Part 1: {}", a1);
 	println!("Part 2: {}", a2);
-	println!("Day 1 Calc time: {:?}", duration);
+	println!("Calc time: {:?}", duration);
 }
