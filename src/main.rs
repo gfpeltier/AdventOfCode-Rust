@@ -8,4 +8,5 @@ fn main() {
     aoc2020::d3::run();
     aoc2021::d1::run();
     aoc2021::d2::run();
+    aoc2021::d3::run();
 }
